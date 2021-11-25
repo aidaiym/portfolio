@@ -7,14 +7,10 @@ class ListViewConstructor extends StatelessWidget {
   final Function pageRout;
   @override
   Widget build(BuildContext context) {
-    ListTile(
+    return ListTile(
       leading: CircleAvatar(
-        radius: 55,
-        backgroundColor: Colors.deepPurple[200],
-        child: CircleAvatar(
-          radius: 50,
-          backgroundImage: AssetImage('logo_flutter.jpg'),
-        ),
+        radius: 20,
+        backgroundImage: AssetImage('assets/images/logo_flutter.jpg'), 
       ),
       title: Text(
         listString,

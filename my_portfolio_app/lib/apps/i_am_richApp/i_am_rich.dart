@@ -30,7 +30,7 @@ class DiamondPage extends StatelessWidget {
               Container(
                 margin: const EdgeInsets.only(top: 30.0),
                 child: Image.asset(
-                  "assets/images/diamond.png",
+                  'assets/images/diamond.jpg',
                   width: 300,
                   height: 300,
                 ),

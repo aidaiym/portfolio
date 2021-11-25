@@ -38,7 +38,7 @@ class _FloatingButtonsState extends State<FloatingButtons> {
             ),
             Text(
               widget.floatText2,
-              style: TextStyle(color: Colors.white, fontSize: 40),
+              style: TextStyle(color: Colors.white, fontSize: 25),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -49,7 +49,7 @@ class _FloatingButtonsState extends State<FloatingButtons> {
                   backgroundColor: Color(0xff4C4E5D),
                   child: Text(
                     '+',
-                    style: TextStyle(color: Colors.white, fontSize: 25),
+                    style: TextStyle(color: Colors.white, fontSize: 15),
                   ),
                 ),
                 SizedBox(
@@ -61,7 +61,7 @@ class _FloatingButtonsState extends State<FloatingButtons> {
                   backgroundColor: Color(0xff4C4E5D),
                   child: Text(
                     '-',
-                    style: TextStyle(color: Colors.white, fontSize: 25),
+                    style: TextStyle(color: Colors.white, fontSize: 15),
                   ),
                 ),
               ],

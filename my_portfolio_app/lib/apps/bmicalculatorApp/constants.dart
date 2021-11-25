@@ -11,29 +11,29 @@ const Color lightGreen = Color(0xff22D875);
 
 //TextStyles
 const TextStyle numberTextStyle = TextStyle(
-  fontSize: 44.0,
+  fontSize: 30.0,
   fontWeight: FontWeight.bold,
 );
 const TextStyle titleTextStyle = TextStyle(
-  fontSize: 22.0,
+  fontSize: 20.0,
   fontWeight: FontWeight.w600,
 );
 
 const TextStyle buttonTextStyle = TextStyle(
-  fontSize: 34.0,
+  fontSize: 30.0,
   fontWeight: FontWeight.bold,
 );
 
 const TextStyle resultTitle = TextStyle(
-  fontSize: 54.0,
+  fontSize: 40.0,
   fontWeight: FontWeight.bold,
 );
 const TextStyle resultSubTitle = TextStyle(
   color: lightGreen,
-  fontSize: 34.0,
+  fontSize: 30.0,
   fontWeight: FontWeight.bold,
 );
 const TextStyle resultNumber = TextStyle(
-  fontSize: 84.0,
+  fontSize: 70.0,
   fontWeight: FontWeight.bold,
 );

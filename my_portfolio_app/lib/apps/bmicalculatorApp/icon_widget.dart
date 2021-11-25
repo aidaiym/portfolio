@@ -18,13 +18,13 @@ class IconWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(
-          allPaddingSize ?? 28.0), // ?? egerde null bolup kalsa 28.0 ber
+          allPaddingSize ?? 25.0), // ?? egerde null bolup kalsa 28.0 ber
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           FaIcon(
             icon,
-            size: 85.0,
+            size: 70.0,
           ),
           Text(
             text,

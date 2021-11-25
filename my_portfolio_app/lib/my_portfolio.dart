@@ -6,7 +6,7 @@ import 'package:my_portfolio_app/apps/counterApp/counter.dart';
 import 'package:my_portfolio_app/apps/dicegameApp/dicegame.dart';
 import 'package:my_portfolio_app/apps/i_am_richApp/i_am_rich.dart';
 import 'package:my_portfolio_app/apps/quizzApp/quiz_brain.dart';
-import 'package:my_portfolio_app/apps/xylophoneApp/xylophone.dart';
+import 'package:my_portfolio_app/constants.dart';
 import 'package:my_portfolio_app/list_cards.dart';
 import 'package:my_portfolio_app/list_view.dart';
 
@@ -14,25 +14,44 @@ class AboutMe extends StatelessWidget {
   const AboutMe({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    bool _isAlwaysShown = true;
-
-    bool _showTrackOnHover = false;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          child: Scrollbar(
-            isAlwaysShown: _isAlwaysShown,
-            showTrackOnHover: _showTrackOnHover,
-            hoverThickness: 30.0,
-            child: ListView.builder(
-              itemCount: 20,
-              itemBuilder: (context, index) => MyItem(index),
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      color: bgColor,
+      child: ListView(
+        children: [
+          TextWidgets(
+            titleText: 'About me',
+            paragraphText:
+                '   Hello! My name is Aidaiym.  I am a Flutter Developer! I am looking for a role where I can grow and continue to learn  more new things.',
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(80.0),
             ),
           ),
-        ),
-        Divider(height: 1),
-      ],
+          TextWidgets(
+            titleText: 'Education',
+            paragraphText:
+                ' International University of Central Asia 2020-2024. Bachelor in Informational Technologies',
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(80.0),
+            ),
+          ),
+          TextWidgets(
+            titleText: 'Skills',
+            paragraphText: '  HTML / CSS, Flutter/ Java/Python(Django), Git',
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(80.0),
+            ),
+          ),
+          TextWidgets(
+            titleText: 'Activities',
+            paragraphText: ' Girls in IT 2019-2020 , Python for Everybody',
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(80.0),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -62,7 +81,7 @@ class MyProjects extends StatelessWidget {
         ),
         ListViewConstructor(
           listString: ' Xylophone App',
-          pageRout: (context) => XylophoneApp(),
+          pageRout: (context) => DiceGame(),
         ),
         ListViewConstructor(
           listString: ' BMI-calculator App',
@@ -90,7 +109,13 @@ class Contacts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return TextWidgets(
+      titleText: 'Contacts',
+      paragraphText: 'https://github.com/aidaiym',
+      borderRadius: BorderRadius.only(
+        bottomLeft: Radius.circular(0.0),
+      ),
+    );
   }
 }
 

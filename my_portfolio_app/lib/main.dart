@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio_app/constants.dart';
 import 'package:my_portfolio_app/my_portfolio.dart';
 
-void main() {
-  runApp(
-    MaterialApp(
+void main() => runApp(MainPage());
+
+class MainPage extends StatelessWidget {
+  const MainPage({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Portfolio',
       home: DefaultTabController(
@@ -11,10 +17,10 @@ void main() {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.purple[700],
+            backgroundColor: sColor,
             centerTitle: true,
             title: Text('Tursunalieva Aidaiym'),
-            bottom: const TabBar(
+            bottom:  TabBar(
               tabs: <Widget>[
                 Tab(
                   icon: Icon(Icons.person),
@@ -28,7 +34,7 @@ void main() {
               ],
             ),
           ),
-          body: const TabBarView(
+          body:  TabBarView(
             children: <Widget>[
               Center(
                 child: AboutMe(),
@@ -43,6 +49,6 @@ void main() {
           ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }

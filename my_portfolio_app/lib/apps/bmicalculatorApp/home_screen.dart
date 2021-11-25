@@ -26,8 +26,8 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
 
-    _height = 120;
-    _weigth = 45;
+    _height = 100;
+    _weigth = 40;
     _age = 16;
   }
 
@@ -82,10 +82,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: IconWidget(
                                   icon: FontAwesomeIcons.mars,
                                   text: 'MALE',
-                                  allPaddingSize: 32.0,
+                                  allPaddingSize: 30.0,
                                 ),
                               ),
-                              const SizedBox(width: 25.0),
+                              const SizedBox(width: 20.0),
                               ReUsableWidget(
                                 onTap: () => chooseGender(Gender.FEMALE),
                                 bgColor: gender == Gender.FEMALE
@@ -94,13 +94,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: IconWidget(
                                   icon: FontAwesomeIcons.venus,
                                   text: 'FEMALE',
-                                  allPaddingSize: 32.0,
+                                  allPaddingSize: 30.0,
                                 ),
                               ),
                             ],
                           ),
                         ),
-                        const SizedBox(height: 25.0),
+                        const SizedBox(height: 20.0),
                         ReUsableWidget(
                           onTap: null,
                           bgColor: activeIconColor,
@@ -128,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ),
                                 ],
                               ),
-                              const SizedBox(height: 12.0),
+                              const SizedBox(height: 10.0),
                               SliderTheme(
                                 data: SliderThemeData(
                                   trackHeight: 2.0,
@@ -136,15 +136,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                   inactiveTrackColor: Colors.grey,
                                   thumbColor: Colors.red,
                                   thumbShape: RoundSliderThumbShape(
-                                      enabledThumbRadius: 18.0),
+                                      enabledThumbRadius: 15.0),
                                   overlayShape: RoundSliderOverlayShape(
-                                      overlayRadius: 30.0),
+                                      overlayRadius: 25.0),
                                   overlayColor: Color(0x29EB1555),
                                 ),
                                 child: Slider(
                                   value: _height,
                                   min: 50,
-                                  max: 240,
+                                  max: 230,
                                   onChanged: (double ozgorgonSan) {
                                     setState(() {
                                       _height = ozgorgonSan;
@@ -155,7 +155,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],
                           ),
                         ),
-                        const SizedBox(height: 25.0),
+                        const SizedBox(height: 20.0),
                         Expanded(
                           child: Row(
                             children: [
@@ -169,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   decrement: () => _decrement(WeightOrAge.WEIGHT),
                                 ),
                               ),
-                              const SizedBox(width: 25.0),
+                              const SizedBox(width: 20.0),
                               ReUsableWidget(
                                 onTap: null,
                                 bgColor: activeIconColor,
@@ -183,7 +183,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],
                           ),
                         ),
-                        const SizedBox(height: 35.0),
+                        const SizedBox(height: 30.0),
                       ],
                     ),
                   ),
@@ -204,7 +204,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                   buttonColor: buttonColor,
                   constraints: BoxConstraints(
-                    minHeight: 92,
+                    minHeight: 90,
                     minWidth: MediaQuery.of(context).size.width,
                   ),
                   shape: RoundedRectangleBorder(

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio_app/apps/bmicalculatorApp/constants.dart';
 
-
 class CustomButton extends StatelessWidget {
   const CustomButton({
     @required this.child,
@@ -24,8 +23,8 @@ class CustomButton extends StatelessWidget {
       onPressed: onTap,
       constraints: constraints ??
           BoxConstraints(
-            minHeight: 62.0,
-            minWidth: 62.0,
+            minHeight: 60.0,
+            minWidth: 60.0,
           ),
       fillColor: buttonColor ?? circleButtonColor,
       shape: shape ?? CircleBorder(),
